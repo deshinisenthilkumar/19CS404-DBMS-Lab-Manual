@@ -60,8 +60,7 @@ Key Differences:
 - Use `DBMS_OUTPUT.PUT_LINE` to display the result.
 - Call the procedure with a number as input.
 
-**Expected Output:**  
-Square of 6 is 36
+## Program:
 ```
 CREATE OR REPLACE PROCEDURE find_square(p_number IN NUMBER) IS
     v_square NUMBER;
@@ -75,9 +74,11 @@ SET SERVEROUTPUT ON;
 BEGIN
     find_square(6);
 END;
-/
 ```
-![image](https://github.com/user-attachments/assets/d6436d5d-b540-43d7-a396-2a8debfbb20a)
+
+**Output:**  
+<img width="467" height="83" alt="image" src="https://github.com/user-attachments/assets/3188200b-8178-4f62-a148-b46bedaee561" />
+
 
 ---
 
@@ -90,8 +91,7 @@ END;
 - Return the result using the `RETURN` statement.
 - Call the function using a `SELECT` statement or in an anonymous block.
 
-**Expected Output:**  
-Factorial of 5 is 120
+### Program:
 ```
 SET SERVEROUTPUT ON;
 
@@ -123,7 +123,9 @@ END;
 /
 ```
 
-![image](https://github.com/user-attachments/assets/1319e42f-c31c-49dd-8c20-1bb349322a54)
+**Expected Output:**  
+<img width="765" height="77" alt="image" src="https://github.com/user-attachments/assets/d1a4f1e6-6c6e-4837-bb68-1c7e4890485b" />
+
 
 ---
 
@@ -134,10 +136,7 @@ END;
 - Accept an input parameter.
 - Use the `MOD` function to check if the number is divisible by 2.
 - Display whether it is Even or Odd using `DBMS_OUTPUT.PUT_LINE`.
-
-**Expected Output:**  
-12 is Even
-
+### Program:
 ```
 SET SERVEROUTPUT ON;
 
@@ -159,7 +158,8 @@ END;
 /
 ```
 
-![image](https://github.com/user-attachments/assets/1275528f-e95b-4523-8f3c-90f065a73b94)
+**Output:**  
+<img width="465" height="95" alt="image" src="https://github.com/user-attachments/assets/721ecc09-da92-4c99-a965-7de68fe5d167" />
 
 ---
 
@@ -171,10 +171,7 @@ END;
 - Use a loop to reverse the digits of the number.
 - Return the reversed number.
 - Call the function and display the output.
-
-**Expected Output:**  
-Reversed number of 1234 is 4321
-
+### Program:
 ```
 CREATE OR REPLACE FUNCTION reverse_number(p_number IN NUMBER)
 RETURN NUMBER IS
@@ -202,7 +199,8 @@ END;
 /
 ```
 
-![image](https://github.com/user-attachments/assets/b08ddc4c-962a-4af3-b600-55a98927cc9a)
+**Output:**  
+<img width="422" height="77" alt="image" src="https://github.com/user-attachments/assets/2e7623c3-de6a-435c-99d3-2b9fa3bef8fd" />
 
 ---
 
@@ -214,14 +212,7 @@ END;
 - Use a loop from 1 to 10 to multiply the input number.
 - Display the multiplication results using `DBMS_OUTPUT.PUT_LINE`.
 
-**Expected Output:**  
-Multiplication table of 5:  
-5 x 1 = 5  
-5 x 2 = 10  
-5 x 3 = 15  
-...  
-5 x 10 = 50
-
+### Program:
 ```
 CREATE OR REPLACE PROCEDURE print_table(p_number IN NUMBER) IS
 BEGIN
@@ -239,7 +230,9 @@ END;
 /
 ```
 
-![image](https://github.com/user-attachments/assets/0ef9eca5-64dc-4cc4-a91b-218d48a989dc)
+**Output:**  
+<img width="382" height="266" alt="image" src="https://github.com/user-attachments/assets/716617eb-2c7a-4e14-aa38-98d7712cc22c" />
+
 
 ## RESULT
 Thus, the PL/SQL programs using procedures and functions were written, compiled, and executed successfully.
